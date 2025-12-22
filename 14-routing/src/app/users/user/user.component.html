@@ -1,0 +1,6 @@
+<div class="rounded-xl bg-purple-800">
+  <a [routerLink]="['/users', user().id, 'tasks']" routerLinkActive="selected">
+    <img [src]="imagePath()" [alt]="user().name" />
+    <span>{{ user().name }}</span>
+  </a>
+</div>
