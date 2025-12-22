@@ -6,11 +6,10 @@ import { ResolveFn, RouterLink } from "@angular/router";
 import { Task } from './task/task.model';
 
 @Component({
-  selector: 'app-tasks',
-  standalone: true,
-  templateUrl: './tasks.component.html',
-  styleUrl: './tasks.component.css',
-  imports: [TaskComponent, RouterLink]
+    selector: 'app-tasks',
+    templateUrl: './tasks.component.html',
+    styleUrl: './tasks.component.css',
+    imports: [TaskComponent, RouterLink]
 })
 export class TasksComponent {
   // userId = input.required<string>()

@@ -3,11 +3,10 @@ import { UsersService } from '../users.service';
 import { ActivatedRoute, RouterOutlet, RouterLink, ResolveFn, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 @Component({
-  selector: 'app-user-tasks',
-  standalone: true,
-  templateUrl: './user-tasks.component.html',
-  styleUrl: './user-tasks.component.css',
-  imports: [RouterOutlet, RouterLink],
+    selector: 'app-user-tasks',
+    templateUrl: './user-tasks.component.html',
+    styleUrl: './user-tasks.component.css',
+    imports: [RouterOutlet, RouterLink]
 })
 export class UserTasksComponent {
   private usersService = inject(UsersService)

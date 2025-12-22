@@ -7,11 +7,10 @@ import { TasksService } from '../tasks.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-task',
-  standalone: true,
-  templateUrl: './task.component.html',
-  styleUrl: './task.component.css',
-  imports: [DatePipe, CardComponent],
+    selector: 'app-task',
+    templateUrl: './task.component.html',
+    styleUrl: './task.component.css',
+    imports: [DatePipe, CardComponent]
 })
 export class TaskComponent {
   task = input.required<Task>();
